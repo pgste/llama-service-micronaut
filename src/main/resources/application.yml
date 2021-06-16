@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: llamaService
+grpc:
+  server:
+    port: 8080

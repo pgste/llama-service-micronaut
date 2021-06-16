@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.llama.farm";
+option java_outer_classname = "LlamaServiceProto";
+option objc_class_prefix = "HLW";
+
+package com.llama.farm;
+
+service LlamaGreeter {
+  rpc send (LlamaServiceRequest) returns (LlamaServiceReply) {}
+}
+
+message LlamaServiceRequest {
+  string name = 1;
+}
+
+message LlamaServiceReply {
+  string message = 1;
+}
